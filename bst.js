@@ -22,7 +22,7 @@ BinarySearchTree.prototype.push = function(val){
    }
 
    var currentNode = root;
-   var newNode = new Node(val); 
+   var newNode = new Node(val);
 
    while(currentNode){
       if(val < currentNode.value){
@@ -45,4 +45,12 @@ BinarySearchTree.prototype.push = function(val){
      }
   }
 
-}
+};
+
+// testing the function
+var bst = new BinarySearchTree();
+bst.push(3);
+bst.push(2);
+bst.push(4);
+bst.push(1);
+bst.push(5);
